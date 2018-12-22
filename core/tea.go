@@ -5,12 +5,16 @@ package core
 
 // TeaNumRounds number of rounds in Tiny Encryption Algorithm
 const TeaNumRounds = 32
+
 // TeaDelta64 TEA encryption constant
 const TeaDelta64 uint32 = 0x9E3779B9
+
 // TeaDecryptSum64 TEA decryption constant
 const TeaDecryptSum64 uint32 = 0xc6ef3720 // 0x9E3779B9 * 32
+
 // TeaDelta32 TEA encryption constant
 const TeaDelta32 uint16 = 0x9E37
+
 // TeaDecryptSum32 TEA decryption constant
 const TeaDecryptSum32 uint16 = 0xc6e0 // 0x9E37 * 32
 

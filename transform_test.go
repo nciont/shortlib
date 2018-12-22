@@ -22,9 +22,9 @@ func TestTransform32(t *testing.T) {
 	}
 
 	tr := &shortlib.Transform32{
-		Key: key,
+		Key:      key,
 		Alphabet: []rune("qnKDF6Qfid43ys2jb95cgJzLxtw7hP8rpGvmBHNMk"),
-		Idlen: 6,
+		Idlen:    6,
 	}
 
 	enc := tr.Encode(uint32(n))
@@ -50,9 +50,9 @@ func TestTransform64(t *testing.T) {
 	}
 
 	tr := &shortlib.Transform64{
-		Key: key,
+		Key:      key,
 		Alphabet: []rune("BNwEvKqdec4M9kXQrCAHpFSRfPj5YaxGDbV2JT8sUWIu7t3nigyhZ6Lmz"),
-		Idlen: 11,
+		Idlen:    11,
 	}
 
 	enc := tr.Encode(n)
@@ -76,12 +76,12 @@ func TestTransform32Randomness(t *testing.T) {
 	}
 
 	tr := &shortlib.Transform32{
-		Key: key,
+		Key:      key,
 		Alphabet: []rune("qnKDF6Qfid43ys2jb95cgJzLxtw7hP8rpGvmBHNMk"),
-		Idlen: 6,
+		Idlen:    6,
 	}
 
-	for k := 0; k < 2 << 4; k++ {
+	for k := 0; k < 2<<4; k++ {
 		t.Logf("%d -> %s", k, tr.Encode(uint32(k)))
 	}
 }
