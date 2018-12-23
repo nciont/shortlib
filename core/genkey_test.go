@@ -1,7 +1,7 @@
 package core_test
 
 import (
-	"shortlib/core"
+	"github.com/nciont/shortlib/core"
 	"testing"
 )
 

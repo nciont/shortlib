@@ -1,9 +1,9 @@
 package shortlib_test
 
 import (
+	"github.com/nciont/shortlib"
+	"github.com/nciont/shortlib/core"
 	"math/rand"
-	"shortlib"
-	"shortlib/core"
 	"testing"
 	"time"
 )

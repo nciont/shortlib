@@ -1,15 +1,15 @@
 package main
 
 import (
-	rand2 "crypto/rand"
+	cryptorand "crypto/rand"
 	"encoding/binary"
 	"errors"
 	"flag"
 	"fmt"
+	"github.com/nciont/shortlib/core"
 	"math/big"
 	"math/rand"
 	"os"
-	"shortlib/core"
 	"unicode/utf8"
 )
 
@@ -23,7 +23,7 @@ type params struct {
 
 func init() {
 	nBytes := make([]byte, 8, 8)
-	if _, e := rand2.Read(nBytes); e != nil {
+	if _, e := cryptorand.Read(nBytes); e != nil {
 		panic(e)
 	}
 	rand.Seed(int64(binary.LittleEndian.Uint64(nBytes)))

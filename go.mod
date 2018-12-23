@@ -1,1 +1,1 @@
-module shortlib
+module github.com/nciont/shortlib

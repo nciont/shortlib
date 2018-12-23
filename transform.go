@@ -2,8 +2,8 @@ package shortlib
 
 import (
 	"errors"
-	"shortlib/core"
-	"shortlib/rebase"
+	"github.com/nciont/shortlib/core"
+	"github.com/nciont/shortlib/rebase"
 	"unicode/utf8"
 )
 

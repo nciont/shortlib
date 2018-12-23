@@ -1,8 +1,8 @@
 package rebase_test
 
 import (
+	"github.com/nciont/shortlib/rebase"
 	"math/rand"
-	"shortlib/rebase"
 	"strconv"
 	"testing"
 	"time"
